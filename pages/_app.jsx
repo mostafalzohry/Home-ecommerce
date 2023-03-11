@@ -5,7 +5,7 @@ import dynamic from 'next/dynamic'
 import Home from "./index"
 
 
-function MyApp({ Component, pageProps }) {
+function MyApp() {
 
   const breakpoints = {
     xs: "23.4375em",
@@ -20,7 +20,6 @@ function MyApp({ Component, pageProps }) {
     
   
     <ChakraProvider theme={theme}>
-      {/* <Component {...pageProps} />; */}
       <Home/>
     </ChakraProvider>
  
