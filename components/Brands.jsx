@@ -70,9 +70,9 @@ import "swiper/swiper-bundle.css";
                   className="w-full mx-auto bg-secondary p-6"
                 />
               </div>
-              <p className="w-full text-center mt-2 font-bold">
+              <div className="w-full text-center mt-2 font-bold">
                 Up to {brand.sale_percentage}%
-              </p>
+              </div>
             </SwiperSlide>
           );
         })}

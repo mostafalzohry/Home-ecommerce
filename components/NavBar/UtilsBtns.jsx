@@ -6,7 +6,7 @@ const UtilsBtns = () => {
     <Box>
       <Flex>
         <Box display={{ base: "none", md: "block" }}>
-          <p className="text-secondary font-semibold mt-2">العربية</p>
+          <div className="text-secondary font-semibold mt-2">العربية</div>
         </Box>
         <Button variant="unstyled" minW="fit-content" minH="fit-content" mx={3}>
           <CustomIcon w={24} h={24} src="/user.svg" alt="profile" />

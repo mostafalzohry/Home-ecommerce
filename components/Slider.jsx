@@ -6,31 +6,28 @@ import "swiper/css";
 import "swiper/swiper-bundle.css";
 import { getData } from "../Data/Getdata.jsx";
 
-
 function Slider() {
   const [sliders, setSliders] = useState([]);
-
+  
   useEffect(() => {
     getData("https://api-task.bit68.com/en/api/slider_image/")
       .then((res) => {
         setSliders(res.results);
         console.log(res.results);
-
       })
       .catch((err) => {
         console.log(err);
       });
   }, []);
-
   return (
     <div>
+      
       <Swiper
         centeredSlides={true}
-      
         pagination={{
           clickable: true,
         }}
-        paginationType="bullets"
+        paginationtype="bullets"
         modules={[Pagination]}
         className="w-full h-[200px] md:h-[300px] lg:h-[470px]"
       >
@@ -54,10 +51,9 @@ function Slider() {
               </SwiperSlide>
             );
           })}
-      </Swiper>
+      </Swiper> 
     </div>
   );
 }
 
-
-export default Slider
+export default Slider;

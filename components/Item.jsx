@@ -66,8 +66,8 @@ function Item({ title }) {
                 alt="slider"
                 className="mx-auto w-[60%]"
               />
-              <p className="w-full text-center mt-2 font-bold">{item.name}</p>
-              <p className="w-full text-center mt-2 text-xl font-extrabold">
+              <div className="w-full text-center mt-2 font-bold">{item.name}</div>
+              <div className="w-full text-center mt-2 text-xl font-extrabold">
                 {Number(item.price_before_sale) -
                   Number(item.price_after_sale) ===
                 0 ? (
@@ -75,15 +75,15 @@ function Item({ title }) {
                     EGP {item.price_before_sale}
                   </span>
                 ) : (
-                  <p className="text-red-700">
+                  <div className="text-red-700">
                     <span>EGP {item.price_after_sale}</span>
                     <span className="text-sm">
                       {" "}
                       save {item.price_before_sale - item.price_after_sale}
                     </span>
-                  </p>
+                  </div>
                 )}
-              </p>
+              </div>
             </SwiperSlide>
           );
         })}

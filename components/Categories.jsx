@@ -66,9 +66,9 @@ function Categories() {
                   alt="slider"
                   className="mx-auto"
                 />
-                <p className="w-full text-center mt-2 font-bold">
+                <div className="w-full text-center mt-2 font-bold">
                   {category.name}
-                </p>
+                </div>
               </SwiperSlide>
             );
           })}

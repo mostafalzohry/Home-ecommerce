@@ -9,9 +9,17 @@ import Footer from "../components/Footer";
 import HeroImage from "../components/HeroImage";
 import AllNav from "../components/NavBar/AllNav";
 import Cards from "../components/Cards";
+import React, { Suspense } from "react";
+
+ 
+    
 
 export default function Home() {
+
+
   return (
+
+   
     <div>
       <Head>
         <title>Home Page</title>
@@ -34,5 +42,6 @@ export default function Home() {
       <Cards />
       <Footer />
     </div>
+  
   );
 }
